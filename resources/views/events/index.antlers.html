@@ -4,12 +4,26 @@
     <h2>
         {{ event:title }}
     </h2>
+    <p>
+        {{ content }}
+    </p>
 
     <h3>related artists</h3>
     <ul>
-        {{ artists }} {{ title }} {{ content }} {{ /artists }}
+        {{ artists }}
+
+        <a href="{{url}}">
+            <h4>
+                {{ title }}
+            </h4>
+        </a>
+        <p>
+            {{ content }}
+        </p>
+        {{ /artists }}
     </ul>
 
     {{ /scope:event }}
 </article>
+<hr />
 {{ /collection:events }}
