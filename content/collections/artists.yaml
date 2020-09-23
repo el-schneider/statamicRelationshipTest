@@ -1,0 +1,13 @@
+title: Artists
+sites:
+  - en
+  - de
+template: artists/show
+layout: layout
+mount: 21f9b836-f311-44ad-9895-7866e78f6d92
+revisions: false
+route: 'artists/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

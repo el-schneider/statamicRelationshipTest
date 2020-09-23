@@ -1,0 +1,33 @@
+title: Pages
+sites:
+  - en
+  - de
+template: pages/show
+layout: layout
+revisions: false
+route: '{parent_uri}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: true
+  tree:
+    en:
+      -
+        entry: 18932d48-a7e4-4d48-9ce2-325d8c12357d
+      -
+        entry: 748cfde0-42cb-41d5-b468-ce7f900b31f3
+      -
+        entry: 1ead9c8c-d455-405e-aecf-9298ac7245d7
+      -
+        entry: 30d70dbd-820a-45eb-a143-09275f31abfe
+      -
+        entry: 21f9b836-f311-44ad-9895-7866e78f6d92
+    de:
+      -
+        entry: c31b4d38-5cfe-4c96-8957-e642bc98dc1c
+      -
+        entry: 6a657bbd-9a46-429a-ac34-08fee54f0ca7
+      -
+        entry: 43eacb24-b749-42a4-8f55-75a17d23de46

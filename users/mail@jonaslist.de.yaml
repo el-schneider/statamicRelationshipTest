@@ -1,0 +1,12 @@
+name: jonas
+super: true
+id: 89c6e2f1-d2ee-4669-b3c7-e73293467373
+password_hash: $2y$10$K1oLU5SRMtnl9vD1ldMOUe2tvIJxH5DeK0z.6.hjDFDX8NQf3CBnq
+preferences:
+  collections:
+    events:
+      after_save: continue_editing
+    artists:
+      after_save: continue_editing
+    pages:
+      after_save: continue_editing

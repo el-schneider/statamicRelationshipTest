@@ -1,0 +1,15 @@
+{{ collection:events }}
+<article>
+    {{ scope:event }}
+    <h2>
+        {{ event:title }}
+    </h2>
+
+    <h3>related artists</h3>
+    <ul>
+        {{ artists }} {{ title }} {{ content }} {{ /artists }}
+    </ul>
+
+    {{ /scope:event }}
+</article>
+{{ /collection:events }}

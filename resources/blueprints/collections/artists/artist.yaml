@@ -1,0 +1,77 @@
+title: Artist
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          factory: firstName
+          validate:
+            - required
+      -
+        handle: image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          type: assets
+          listable: hidden
+          display: Image
+      -
+        handle: content
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          type: bard
+          listable: hidden
+          display: Content
+          localizable: true
+      -
+        handle: email
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Email
+          factory: email
+      -
+        handle: website
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Website
+          factory: url
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

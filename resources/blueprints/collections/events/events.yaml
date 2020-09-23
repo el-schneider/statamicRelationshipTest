@@ -1,0 +1,40 @@
+title: Events
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          localizable: true
+          factory: 'paragraph(1, true)'
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+          factory: 'paragraph(4, true)'
+      -
+        handle: artists
+        field:
+          mode: default
+          collections:
+            - artists
+          display: Artists
+          type: entries
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

@@ -1,0 +1,14 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#272170",
+        "titleBar.activeBackground": "#372E9C",
+        "titleBar.activeForeground": "#FAFAFD"
+    },
+    "beautify.language": {
+        "html": [
+            "htm",
+            "html",
+            "antlers"
+        ]
+    },
+}

@@ -1,0 +1,13 @@
+title: Events
+sites:
+  - en
+  - de
+template: events/index
+layout: layout
+mount: 30d70dbd-820a-45eb-a143-09275f31abfe
+revisions: false
+route: '{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
